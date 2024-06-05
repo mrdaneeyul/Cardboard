@@ -4,7 +4,7 @@ CbModelBegin();
 var _ruleset = CbTilemapsToModelRuleset();
 _ruleset.AddTileset(tsTiles).RemapEdgeAbove(1,0,   0,1, 1,0).RemapEdgeAbove(1,0,   0,1, 1,0);
 
-var _array = ["Tiles_1", "Tiles_2", "Tiles_3"];
+var _array = ["Tiles_0", "Tiles_1", "Tiles_2", "Tiles_3"];
 
 CbTilemapsToModel(_ruleset, _array, 0, 0, 0, 100, 100, 100);
 CbLayerArrayHide(_array);

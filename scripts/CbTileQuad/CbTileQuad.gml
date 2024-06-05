@@ -20,28 +20,10 @@
 /// @param color    Blend color for the tile (c_white is "no blending")
 /// @param alpha    Blend alpha for the tile (0 being transparent and 1 being 100% opacity)
 
-function CbTileQuad()
+function CbTileQuad(_tileset, _tileX, _tileY, _x1, _y1, _z1, _x2, _y2, _z2, _x3, _y3, _z3, _x4, _y4, _z4, _color = c_white, _alpha = 1)
 {
     __CB_GLOBAL_BUILD
-    
-    var _tileset = argument[ 0];
-    var _tileX   = argument[ 1];
-    var _tileY   = argument[ 2];
-    var _x1      = argument[ 3];
-    var _y1      = argument[ 4];
-    var _z1      = argument[ 5];
-    var _x2      = argument[ 6];
-    var _y2      = argument[ 7];
-    var _z2      = argument[ 8];
-    var _x3      = argument[ 9];
-    var _y3      = argument[10];
-    var _z3      = argument[11];
-    var _x4      = argument[12];
-    var _y4      = argument[13];
-    var _z4      = argument[14];
-    var _color   = argument[15];
-    var _alpha   = argument[16];
-    
+        
     static _borderWidth  = 2;
     static _borderHeight = 2;
     
@@ -71,8 +53,7 @@ function CbTileQuad()
     var _v0 = lerp(_tilesetV0, _tilesetV1, (_borderHeight + _tileHeightExt*_tileY              ) / _textureHeight);
     var _u1 = lerp(_tilesetU0, _tilesetU1, (_borderWidth  + _tileWidthExt *_tileX + _tileWidth ) / _textureWidth );
     var _v1 = lerp(_tilesetV0, _tilesetV1, (_borderHeight + _tileHeightExt*_tileY + _tileHeight) / _textureHeight);
-    
-    
+      
     
     //Add this tile to the vertex buffer
     var _vertexBuffer = _global.__batch.__vertexBuffer;

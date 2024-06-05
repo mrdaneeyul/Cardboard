@@ -27,11 +27,15 @@
     "path":"texturegroups/Default",
   },
   "tileAnimation":{
-    "FrameData":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,],
-    "SerialiseFrameCount":1,
+    "FrameData":[
+      0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,9,11,11,12,12,13,13,14,14,15,15,
+    ],
+    "SerialiseFrameCount":2,
   },
-  "tileAnimationFrames":[],
-  "tileAnimationSpeed":15.0,
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"animation_1","frames":[9,10,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":2.0,
   "tileHeight":16,
   "tilehsep":0,
   "tilevsep":0,
